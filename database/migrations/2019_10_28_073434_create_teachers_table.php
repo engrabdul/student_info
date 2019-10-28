@@ -14,7 +14,20 @@ class CreateTeachersTable extends Migration
     public function up()
     {
         Schema::create('teachers', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->bigIncrements('teacher_id');
+            $table->string('first_name');
+            $table->string('last_name');
+            $table->string('email')->unique();
+            $table->date('dob');
+            $table->string('phone');
+            $table->longText('address');
+            $table->string('nationality');
+            $table->string('passport');
+            $table->tinyInteger('status');
+            $table->date('dateregistered');
+            $table->integer('user_id');
+            $table->string('image')->nullable();
+            $table->softDeletes();
             $table->timestamps();
         });
     }
