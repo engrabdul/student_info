@@ -35,7 +35,7 @@
 
             <!-- Logo -->
             <a href="#" class="logo">
-                <b>InfyOm</b>
+                <b>MySMS</b>
             </a>
 
             <!-- Header Navbar -->
