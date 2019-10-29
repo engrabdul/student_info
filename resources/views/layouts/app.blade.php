@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>InfyOm Generator</title>
+    <title>HiQ School Management System</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 
     <!-- Bootstrap 3.3.7 -->
@@ -33,10 +33,15 @@
         <!-- Main Header -->
         <header class="main-header">
 
-            <!-- Logo -->
+            <!-- Brand Logo -->
             <a href="#" class="logo">
-                <b>MySMS</b>
+            <!-- <img src="dist/img/HiQSMSLogo.png" alt="HiQSMS Logo" class="brand-image img-circle elevation-3"
+                style="opacity: .8"> -->
+            <span class="brand-text font-weight-light">HiQ</span>
             </a>
+            <!-- <a href="#" class="logo">
+                <b>HiQSMS</b>
+            </a> -->
 
             <!-- Header Navbar -->
             <nav class="navbar navbar-static-top" role="navigation">
