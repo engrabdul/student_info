@@ -7,6 +7,7 @@
             	<h4 class="modal-title"><b>Roles</b></h4>
           	</div>
           	<div class="modal-body">
+            <!-- Fields -->
               <div class="form-group">
                     {!! Form::label('name', 'Name:') !!}
                     {!! Form::text('name', null, ['class' => 'form-control']) !!}
@@ -18,7 +19,7 @@
                       <input type="number" class="form-control" name="total" id="total" required>
                   	</div>
                 </div> -->
-          	</div>
+			  </div>
           	<div class="modal-footer">
             	<button type="button" class="btn btn-warning btn-flat pull-left" data-dismiss="modal"><i class="fa fa-close"></i> Close</button>
             	{!! Form::submit('Create Role', ['class' => 'btn btn-success']) !!}
