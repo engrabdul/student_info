@@ -44,12 +44,9 @@
                         <button type="button" class="btn btn-warning btn-flat pull-left" data-dismiss="modal"><i class="fa fa-close"></i> Close</button>
                         {!! Form::submit('Update Course', ['class' => 'btn btn-success']) !!}
                     </div>
-                </div>
-            </div>
-        </div>
 
-                   {!! Form::close() !!}
-               </div>
+                    {!! Form::close() !!}
+               
            </div>
        </div>
    </div>

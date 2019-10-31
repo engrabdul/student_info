@@ -24,7 +24,7 @@ class Classes extends Model
 
 
     protected $dates = ['deleted_at'];
-
+    protected $primaryKey = 'class_id';
 
 
     public $fillable = [

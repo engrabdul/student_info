@@ -11,12 +11,26 @@
        <div class="box box-primary">
            <div class="box-body">
                <div class="row">
-                   {!! Form::model($classes, ['route' => ['classes.update', $classes->id], 'method' => 'patch']) !!}
+                   {!! Form::model($classes, ['route' => ['classes.update', $classes->class_id], 'method' => 'patch']) !!}
 
-                        @include('classes.fields')
+                    <!-- Class Name Field -->
+                    <div class="form-group col-md-6">
+                        {!! Form::label('class_name', 'Class Name:') !!}
+                        {!! Form::text('class_name', null, ['class' => 'form-control']) !!}
+                    </div>
+                    <!-- Class Code Field -->
+                    <div class="form-group col-md-6">
+                        {!! Form::label('class_code', 'Class Code:') !!}
+                        {!! Form::text('class_code', null, ['class' => 'form-control']) !!}
+                    </div>
+                </div>
+                    <!-- Submit Field -->
+                    <div class="form-group">
+                        {!! Form::submit('Update Class', ['class' => 'btn btn-success pull-right']) !!}
+                    </div>
 
                    {!! Form::close() !!}
-               </div>
+               
            </div>
        </div>
    </div>

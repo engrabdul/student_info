@@ -11,12 +11,22 @@
        <div class="box box-primary">
            <div class="box-body">
                <div class="row">
-                   {!! Form::model($batch, ['route' => ['batches.update', $batch->id], 'method' => 'patch']) !!}
+                   {!! Form::model($batch, ['route' => ['batches.update', $batch->batch_id], 'method' => 'patch']) !!}
 
-                        @include('batches.fields')
+                        <!-- Batch Field -->
+                        <div class="form-group col-md-6">
+                            {!! Form::label('batch', 'Batch:') !!}
+                            {!! Form::number('batch', null, ['class' => 'form-control']) !!}
+                        </div>
+                    </div>
+
+                        <!-- Submit Field -->
+                        <div class="form-group col-md-6">
+                            {!! Form::submit('Update Batch', ['class' => 'btn btn-success pull-right']) !!}
+                        </div>
 
                    {!! Form::close() !!}
-               </div>
+               
            </div>
        </div>
    </div>
