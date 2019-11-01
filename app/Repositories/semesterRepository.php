@@ -2,25 +2,28 @@
 
 namespace App\Repositories;
 
-use App\Models\Academic;
+use App\Models\semester;
 use App\Repositories\BaseRepository;
 
 /**
- * Class AcademicRepository
+ * Class semesterRepository
  * @package App\Repositories
- * @version October 28, 2019, 8:54 pm UTC
+ * @version November 1, 2019, 12:15 pm UTC
 */
 
-class AcademicRepository extends BaseRepository
+class semesterRepository extends BaseRepository
 {
     /**
      * @var array
      */
     protected $fieldSearchable = [
-        'academic_year'
+        'semester_name',
+        'semester_code',
+        'semester_duration',
+        'semester_description'
     ];
 
-    protected $primaryKey = 'academic_id';
+    protected $primaryKey = 'semester_id';
 
     /**
      * Return searchable fields
@@ -37,6 +40,6 @@ class AcademicRepository extends BaseRepository
      **/
     public function model()
     {
-        return Academic::class;
+        return semester::class;
     }
 }

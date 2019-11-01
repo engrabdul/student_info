@@ -31,13 +31,13 @@
                 <td>
                     {!! Form::open(['route' => ['classrooms.destroy', $classroom->classroom_id], 'method' => 'delete']) !!}
                     <div class='btn-group'>
-                        <!-- -----------------------------View Class Button Start -------------------------------- -->
+                        <!-- -----------------------------View Classroom Button Start -------------------------------- -->
                         <a data-toggle="modal" data-target="#view-classroom-modal" data-classroom_id="{!! $classroom->classroom_id !!}"
                             data-classroom_name="{!! $classroom->classroom_name !!}" data-classroom_code="{!! $classroom->classroom_code !!}" 
                             data-classroom_description="{!! $classroom->classroom_description !!}" data-classroom_status="{!! $classroom->classroom_status !!}" 
                             data-created_at="{!! $classroom->created_at !!}" data-updated_at="{!! $classroom->updated_at !!}"
                         class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
-                        <!-- -----------------------------View Class Button End-------------------------------- -->
+                        <!-- -----------------------------View Classroom Button End-------------------------------- -->
                         <a href="{!! route('classrooms.edit', [$classroom->classroom_id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
                         {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!}
                     </div>

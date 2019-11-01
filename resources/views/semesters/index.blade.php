@@ -2,9 +2,9 @@
 
 @section('content')
     <section class="content-header">
-        <h1 class="pull-left"><i class="fa fa-home">Class Rooms</i></h1>
+        <h1 class="pull-left"><i class="fa fa-gear">Semesters</i></h1>
         <h1 class="pull-right">
-        <a data-toggle="modal" data-target="#add-classroom-modal" class="btn btn-success pull-right" style="margin-top: -10px;margin-bottom: 5px"><i class="fa fa-plus"> Add New Classroom</i></a>
+           <a data-toggle="modal" data-target="#add-semester-modal" class="btn btn-success pull-right" style="margin-top: -10px;margin-bottom: 5px"><i class="fa fa-plus"> Add New Semester</i></a>
         </h1>
     </section>
     <div class="content">
@@ -15,11 +15,11 @@
         <div class="clearfix"></div>
         <div class="box box-primary">
             <div class="box-body">
-                    @include('classrooms.table')
+                    @include('semesters.table')
 
-                    {!! Form::open(['route' => 'classrooms.store']) !!}
+                    {!! Form::open(['route' => 'semesters.store']) !!}
 
-                        @include('classrooms.fields')
+                        @include('semesters.fields')
 
                     {!! Form::close() !!}
             </div>
