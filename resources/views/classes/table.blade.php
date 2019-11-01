@@ -102,7 +102,7 @@
             modal.find('.modal-body #class_code').val(class_code);
             modal.find('.modal-body #created_at').val(created_at);
             modal.find('.modal-body #updated_at').val(updated_at);
-            modal.find('.modal-body #batch_id').val(class_id);
+            modal.find('.modal-body #class_id').val(class_id);
         });
     </script>
 
